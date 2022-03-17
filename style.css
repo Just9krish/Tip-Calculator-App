@@ -331,7 +331,7 @@ input:focus {
 }
 
 
-@media (min-width: 350px) and (min-width: 950px) {
+@media (min-width: 350px) and (max-width: 950px) {
   .calculator-options label:not(label[for="custom"]) {
     max-width: 200px;
     padding: 15px 10px;
@@ -353,6 +353,10 @@ input:focus {
   body {
     margin: 0 auto;
     max-width: 1000px;
+  }
+
+  .container {
+      padding: 0;
   }
   .main-calculator {
     margin: 0 30px;
@@ -377,7 +381,7 @@ input:focus {
     } */
 
   .calculator-options {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .input-custom input {
@@ -427,6 +431,7 @@ input:focus {
     margin-top: 5px;
     margin-top: 5px;
 }
+
 @keyframes SHOW {
     from {
         opacity: 0;
