@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img width="87" height="54" class="logo" src="./images/logo.svg" alt="" />
+    </div>
+  </header>
+
+  <main>
+    <form action="">
+      <div class="main-calculator">
+        <div class="calculator">
+          <div class="calculator-input container">
+            <label class="label-bill font-b color-n2" for="bill">Bill</label>
+            <img src="./images/icon-dollar.svg" width="11" height="17" alt="DollarSign" />
+            <input type="number" required name="bill" id="bill" placeholder="0" />
+          </div>
+          <fieldset class="select-options container">
+            <legend class="font-b color-n2">Select Tip %</legend>
+            <div class="calculator-options font-b">
+              <input type="radio" name="option" value="option5" id="option5" checked />
+              <label for="option5">5%</label>
+              <input type="radio" name="option" value="option10" id="option10" />
+              <label for="option10">10%</label>
+              <input type="radio" name="option" value="option15" id="option15" />
+              <label for="option15">15%</label>
+              <input type="radio" name="option" value="option25" id="option25" />
+              <label for="option25">25%</label>
+              <input type="radio" name="option" value="option50" id="option50" />
+              <label for="option50">50%</label>
+              <div class="input-custom">
+                <label for="custom"></label>
+                <input type="number" name="custom" id="custom" placeholder="Custom" />
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="calculator-input container">
+            <label for="people" class="label-people font-b color-n2">Number of People</label>
+            <img src="./images/icon-person.svg" alt="PeopleSign" width="13" height="16">
+            <input type="number" name="people" id="people" required>
+          </div>
+        </div>
+        <div class="calculation-result">
+          <div class="result-text">
+            <div class="amount">
+              <div>
+                <h2 class="color-n6 font-b">Tip Amount</h2>
+                <span class="color-n4 font-b">/ person</span>
+              </div>
+              <p class="color-p1">$0.00</p>
+            </div>
+            <div class="total">
+              <div>
+                <h2 class="color-n6 font-b">Total</h2>
+                <span class="color-n4 font-b">/ person</span>
+              </div>
+              <p class="color-p1">$0.00</p>
+            </div>
+          </div>
+          <div class="btn-reset">
+            <button type="button" class="color-n1 font-b blocked" disabled>Reset</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
