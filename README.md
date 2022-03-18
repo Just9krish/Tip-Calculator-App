@@ -45,55 +45,11 @@ Users should be able to:
 - Use CSS Grid to make layouts with overlapping elements.
 
 ```html
-<picture class="hero-img">
-  <source
-    srcset="
-      ./assets/image-hero-portrait.webp,
-      ./assets/image-hero-portrait@2x.webp 2x
-    "
-    type="image/webp"
-    media="(min-width: 768px)"
-  />
-  <source
-    srcset="
-      ./assets/image-hero-portrait.png,
-      ./assets/image-hero-portrait@2x.png 2x
-    "
-    type="image/png"
-    media="(min-width: 768px)"
-  />
-  <source
-    srcset="
-      ./assets/image-hero-landscape.webp,
-      ./assets/image-hero-landscape@2x.webp 2x
-    "
-    type="image/webp"
-  />
-  <source
-    srcset="
-      ./assets/image-hero-landscape.png,
-      ./assets/image-hero-landscape@2x.png 2x
-    "
-    type="image/png"
-  />
-  <img
-    src="./assets/image-hero-landscape.png"
-    width="343"
-    height="240"
-    alt="Suite mobile app"
-  />
-</picture>
+
 ```
 
 ```css
-.hero-img {
-  text-align: center;
-}
 
-.hero-img img {
-  width: min(100%, 28rem);
-  height: auto;
-}
 ```
 
 
