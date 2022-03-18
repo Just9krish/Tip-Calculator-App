@@ -250,9 +250,9 @@ input:focus {
   color: var(--color-n1);
 }
 
-/* .calculator-input .zero-negative:focus {
+.calculator-input .zero-negative:focus {
   border: solid 3px red;
-} */
+}
 
 .calculator-options .input-custom {
   background: none;
@@ -374,11 +374,11 @@ input:focus {
     margin-top: 0px;
   }
 
-  /* .calculator-input img {
+ .calculator-input img {
         position: absolute;
         left: 18px;
         top: 45px;
-    } */
+    }
 
   .calculator-options {
     grid-template-columns: 1fr 1fr 1fr;
