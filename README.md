@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here]()
-- Live Site URL: [Click here]()
+- Live Site URL: [Click here](https://tip-calculator-just9krish.netlify.app/)
 
 ## My process
 
