@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/Just9krish/Suite-Landing-Page)
-- Live Site URL: [Click here](https://suite-landing-page-by-just9krish.netlify.app/)
+- Solution URL: [Click here]()
+- Live Site URL: [Click here]()
 
 ## My process
 
@@ -40,9 +40,7 @@ Users should be able to:
 
 ### What I learned
 
-- Using `<picture>` element to provide "webp" format images and "2X" images for higher DPI displays.
-
-- Use CSS Grid to make layouts with overlapping elements.
+Still in progress as I'm not good with javascript yet.
 
 ```html
 

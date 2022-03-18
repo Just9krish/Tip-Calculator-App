@@ -1,6 +1,8 @@
 const inputBill = document.querySelector('input[name="bill"]');
 const inputPeople = document.querySelector('input[name="people"]');
-const radios = Array.from(document.querySelectorAll("input[name='option'] + label"));
+const radios = Array.from(
+  document.querySelectorAll("input[name='option'] + label")
+);
 const totalOut = document.querySelector(".total p");
 const amountOut = document.querySelector(".amount p");
 const custom = document.querySelector("input[name='custom']");
@@ -23,11 +25,19 @@ custom.onfocus = () => {
   if (radioTeste) {
     radioTeste.checked = false;
 
-    if (value !== "" && Number(value) > 0 && key !== "" && Number(key) > 0 && Number.isInteger(key) === true) {
+    if (
+      value !== "" &&
+      Number(value) > 0 &&
+      key !== "" &&
+      Number(key) > 0 &&
+      Number.isInteger(key) === true
+    ) {
       if (custom.value !== "") {
         radioValue = custom.value;
 
-        totalOut.innerHTML = `$${(divider * (radioValue / 100 + 1)).toFixed(2)}`;
+        totalOut.innerHTML = `$${(divider * (radioValue / 100 + 1)).toFixed(
+          2
+        )}`;
         amountOut.innerHTML = `$${(divider * (radioValue / 100)).toFixed(2)}`;
       } else {
         radioValue = 0;
@@ -54,7 +64,13 @@ function inputCustom(event) {
   } else {
     custom.style.color = "inherit";
 
-    if (value !== "" && Number(value) > 0 && key !== "" && Number(key) > 0 && Number.isInteger(key) === true) {
+    if (
+      value !== "" &&
+      Number(value) > 0 &&
+      key !== "" &&
+      Number(key) > 0 &&
+      Number.isInteger(key) === true
+    ) {
       resetRemove.removeAttribute("disabled");
       resetRemove.classList.remove("blocked");
       totalOut.innerHTML = `$${(divider * (radioValue / 100 + 1)).toFixed(2)}`;
@@ -83,7 +99,13 @@ function radioSelect(event) {
     radioValue = 50;
   }
 
-  if (value !== "" && Number(value) > 0 && key !== "" && Number(key) > 0 && Number.isInteger(key) === true) {
+  if (
+    value !== "" &&
+    Number(value) > 0 &&
+    key !== "" &&
+    Number(key) > 0 &&
+    Number.isInteger(key) === true
+  ) {
     totalOut.innerHTML = `$${(divider * (radioValue / 100 + 1)).toFixed(2)}`;
     amountOut.innerHTML = `$${(divider * (radioValue / 100)).toFixed(2)}`;
   }
