@@ -2,7 +2,6 @@
 
 /* -------------- Variables ---------------*/
 
-
 /* --------- Colors --------- */
 
 :root {
@@ -184,14 +183,14 @@ input:focus {
 }
 
 @keyframes shoW {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -10px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .calculator {
@@ -333,7 +332,6 @@ input:focus {
   color: var(--color-n1);
 }
 
-
 @media (min-width: 350px) and (max-width: 950px) {
   .calculator-options label:not(label[for="custom"]) {
     max-width: 200px;
@@ -359,7 +357,7 @@ input:focus {
   }
 
   .container {
-      padding: 0;
+    padding: 0;
   }
   .main-calculator {
     margin: 0 30px;
@@ -377,11 +375,11 @@ input:focus {
     margin-top: 0px;
   }
 
- .calculator-input img {
-        position: absolute;
-        left: 18px;
-        top: 45px;
-    }
+  .calculator-input img {
+    position: absolute;
+    left: 18px;
+    top: 45px;
+  }
 
   .calculator-options {
     grid-template-columns: 1fr 1fr 1fr;
@@ -410,58 +408,58 @@ input:focus {
 }
 
 @media (min-width: 1040px) {
-    .main-calculator {
-        border-radius: 20px;
-    }
+  .main-calculator {
+    border-radius: 20px;
+  }
 }
 
 /* ------- Footer ------- */
 
 .attribution {
-    font-size: 10px;
-    text-align: center;
-    background-color: var(--color-n6);
-    padding: 30px;
-    padding-bottom: 40px;
-    animation: SHOW 2s forwards;
+  font-size: 10px;
+  text-align: center;
+  background-color: var(--color-n6);
+  padding: 30px;
+  padding-bottom: 40px;
+  animation: SHOW 2s forwards;
 }
 
-.attribution a{
-    color: var(--color-n5);
-    background-color: var(--color-n1);
-    display: inline-block;
-    padding: 5px;
-    margin-top: 5px;
-    margin-top: 5px;
+.attribution a {
+  color: var(--color-n5);
+  background-color: var(--color-n1);
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  margin-top: 5px;
 }
 
 @keyframes SHOW {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -10px, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: 450px) and (max-width: 950px) {
-    .attribution {
-        border-radius: 0px 0px 20px 20px;
-        margin-bottom: 20px;
-    }
+  .attribution {
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 950px) {
-    .attribution {
-        background: none;
-    }
+  .attribution {
+    background: none;
+  }
 }
 
 @media (min-width: 1040px) {
-    .attribution {
-        margin-bottom: 20px;
-    }
+  .attribution {
+    margin-bottom: 20px;
+  }
 }
